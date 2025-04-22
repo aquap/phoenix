@@ -46,7 +46,7 @@ Phoenix generated the web files as expected in `lib/hello_web/`. We can also see
   scope "/", HelloWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", PageController, :home
 +   resources "/products", ProductController
   end
 ```
